@@ -1,15 +1,28 @@
 .myNav {
     background-color: #e20074 !important;
 }
-
 .book-div {
     padding: 80px 0;
 }
+
+
 
 .section-title {
     text-align: center;
     margin-bottom: 52px;
     color: #e20074;
+}
+
+.magenta-button {
+    background-color: #e20074 !important;
+    border: 1px solid white !important;
+    color: white !important;
+}
+
+.magenta-button:hover {
+    background-color: white !important;   /* Fondo blanco */
+    color: black !important;              /* Texto negro */
+    border: 1px solid #e20074 !important; /* Borde magenta */
 }
 
 .schedule-section {
@@ -67,7 +80,7 @@
 }
 
 .schedule-tab .st-content {
-    border: 1px solid #ffffff;
+    border: 1px solid  #ffffff;
     border-radius: 2px;
     margin-bottom: 40px;
     -webkit-transition: all 0.3s;
@@ -78,7 +91,7 @@
 
 .schedule-tab .st-content:hover {
     -webkit-box-shadow: 3px 12px 30px rgba(23, 24, 34, 0.05);
-    box-shadow: 3px 12px 30px rgba(34, 23, 33, 0.05);
+    box-shadow: 3px 12px 30px rgba(23, 24, 34, 0.05);
     border: 1px solid transparent;
     background-color: #ffdee6;
 }
@@ -164,18 +177,64 @@
     top: 7px;
 }
 
-.site-btn {
-    background-image: -o-linear-gradient(330deg, #e20074 0%, #fa9bb7 100%), -o-linear-gradient(330deg, #e20074 0%, #fa9bb7 100%);
-    background-image: linear-gradient(120deg, #e20074 0%, #fa9bb7 100%), linear-gradient(120deg, #e20074 0%, #fa9bb7 100%);
+.login-container {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
 }
 
-.btn-outline-primary.round-button.mx-2 {
-    color: #ffffff;
-    border-color: #ffffff;
-    background-color: #e20074;
+h1 {
+    margin: 0;
+    padding: 10px 0;
+    color: #333;
 }
 
-.btn-outline-primary.round-button.mx-2:hover {
-    color: #e20074;
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    text-align: left;
+    margin:0 !important;
+    color: #555;
+}
+
+.login-container input {
+    padding: 5px; 
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.login-container select {
+    padding: 5px; 
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login-container button {
     background-color: #ffffff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.modal-body  {
+    padding: 1px !important;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+span {
+    text-decoration: none;
+    color: #007BFF;
+    cursor: pointer;
+}
+
+span:hover {
+    text-decoration: underline;
 }

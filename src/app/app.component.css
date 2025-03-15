@@ -1,0 +1,19 @@
+.myNav {
+    background-color: #e20074;
+}
+
+.magenta-button {
+    background-color: #e20074; /* Fondo magenta */
+    border: 1px solid white;   /* Borde blanco */
+    color: white;              /* Texto blanco */
+}
+
+.magenta-button:hover {
+    background-color: white;   /* Fondo blanco */
+    color: black;              /* Texto negro */
+    border: 1px solid #e20074; /* Borde magenta */
+}
+
+.form-padding-right {
+    padding-right: 5px; /* Ajusta el valor según tus necesidades */
+}

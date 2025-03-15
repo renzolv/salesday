@@ -1,14 +1,17 @@
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http'; // Importa HttpClientModule
-import { RouterModule } from '@angular/router'; // Importa RouterModule
-
+import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MyBookingsComponent } from './pages/my-bookings/my-bookings.component';
 import { NewEventComponent } from './pages/new-event/new-event.component';
+import { EventListComponent } from './pages/event-list/event-list.component';
 import { EventBookingsComponent } from './pages/event-bookings/event-bookings.component';
-import { routes } from './app.routes'; // Importa las rutas
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common'; // Import CommonModule
+import { RouterModule } from '@angular/router'; // Import RouterModule
+
 
 @NgModule({
   declarations: [
@@ -16,14 +19,19 @@ import { routes } from './app.routes'; // Importa las rutas
     HomeComponent,
     MyBookingsComponent,
     NewEventComponent,
+    EventListComponent,
     EventBookingsComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule, // Asegúrate de incluir HttpClientModule en los imports
-    RouterModule.forRoot(routes) // Configura las rutas
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    CommonModule,
+    RouterModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA] // Add this line
 })
 export class AppModule { }
