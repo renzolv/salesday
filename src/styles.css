@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+.primary-btn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 40px;
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: #e20074;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.form-control {
+    border: 1px solid #243a50;
+}
+.card {
+    background-color: #e20074 !important;
+    color: white;
+}
+.card a {
+    color: white !important;
+}
